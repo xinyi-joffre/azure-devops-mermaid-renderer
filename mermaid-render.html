@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mermaid Rendering</title>
+
+    <script src="lib/VSS.SDK.min.js"></script>
+    <script src="scripts/render.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:false});</script>
+</head>
+<body style="overflow-y: scroll;overflow-x: scroll;">
+    <div id="render-content-display">       
+        <div id="container" class="container container-main">
+            <div class="col-sm-2">
+                <div id="spinner"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

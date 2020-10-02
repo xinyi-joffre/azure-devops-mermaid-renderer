@@ -1,0 +1,78 @@
+{
+    "manifestVersion": 1,
+    "id": "mermaid-renderer",
+    "version": "1.0.2",
+    "name": "Mermaid Renderer",
+    "description": "A Mermaid Renderer",
+    "public": true,
+    "publisher": "xinyi-joffre",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "scopes": [
+        "vso.code"
+    ],
+    "categories": [
+        "Azure Repos"
+    ],
+    "tags": [
+        "mermaid",
+        "diagrams",
+        "render",
+        "preview"
+    ],
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/xinyi-joffre/azure-devops-mermaid-renderer"
+    },
+    "icons": {
+        "default": "marketplace/logo.png"
+    },
+    "contributions": [
+        {
+            "id": "mermaid-renderer",
+            "type": "ms.vss-code-web.content-renderer",
+            "description": "Shows a mermaid renderer for .mmd files",
+            "targets": [
+                "ms.vss-code-web.content-renderer-collection"
+            ],
+            "properties": {
+                "uri": "render.html",
+                "fileExtensions": [
+                    "mmd"
+                ],
+                "mimeTypes": [
+                    "text/html"
+                ],
+                "defaultBehavior": "showRenderedContent",
+                "registeredObjectId": "mermaid_renderer"
+            }
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "marketplace/overview.md"
+        }
+    },
+    "files": [
+        {
+            "path": "mermaid-render.html",
+            "addressable": true
+        },
+        {
+            "path": "scripts",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk/lib", 
+            "addressable": true,
+            "packagePath": "lib"
+        },
+        {
+            "path": "marketplace",
+            "addressable": true
+        }
+    ]
+}

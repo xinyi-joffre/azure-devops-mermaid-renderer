@@ -1,0 +1,29 @@
+{
+  "name": "mermaid-renderer",
+  "version": "1.0.2",
+  "description": "Mermaid Renderer",
+  "main": "mermaid-render.html",
+  "dependencies": {
+    "vss-web-extension-sdk": "^5.141.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xinyi-joffre/azure-devops-mermaid-renderer.git"
+  },
+  "keywords": [
+    "mermaid",
+    "diagrams",
+    "render",
+    "preview"
+  ],
+  "author": "xinyi-joffre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xinyi-joffre/azure-devops-mermaid-renderer/issues"
+  },
+  "homepage": "https://github.com/xinyi-joffre/azure-devops-mermaid-renderer#readme"
+}
