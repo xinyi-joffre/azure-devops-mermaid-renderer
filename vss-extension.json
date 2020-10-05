@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "mermaid-renderer",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "Mermaid Renderer",
     "description": "A Mermaid Renderer",
     "public": true,
@@ -39,7 +39,7 @@
                 "ms.vss-code-web.content-renderer-collection"
             ],
             "properties": {
-                "uri": "render.html",
+                "uri": "mermaid-render.html",
                 "fileExtensions": [
                     "mmd"
                 ],
