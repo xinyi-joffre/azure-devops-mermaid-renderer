@@ -3,13 +3,11 @@ var mermaidRenderer = (function () {
     return {
         renderContent: function(rawContent, options) {
             var rendered = document.getElementById('render-content-display');
-
-            var insertSvg = function(svgCode, bindFunctions){
-                rendered.innerHTML = svgCode;
-            };
-
+            
             var graphDefinition = rawContent;
-            mermaid.mermaidAPI.render('graphDiv', graphDefinition, insertSvg);
+            mermaid.render('graphDiv', graphDefinition).then((result) => { 
+                rendered.innerHTML = result.svg;
+            });
         }
     };
 }());
